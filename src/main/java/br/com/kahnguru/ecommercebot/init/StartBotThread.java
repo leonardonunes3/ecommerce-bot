@@ -34,7 +34,7 @@ public class StartBotThread implements InitializingBean {
             listaProdutos.forEach(webScrapingService::search);
         };
 
-        executorService.scheduleWithFixedDelay(task, 0, 5, TimeUnit.MINUTES);
+        executorService.scheduleWithFixedDelay(task, 0, 1, TimeUnit.MINUTES);
         System.out.println("Bot Iniciado com sucesso");
     }
 }
