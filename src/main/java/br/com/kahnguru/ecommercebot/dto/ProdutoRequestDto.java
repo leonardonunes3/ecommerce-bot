@@ -11,5 +11,6 @@ public class ProdutoRequestDto {
     private String descricao;
     private String marca;
     private Integer ano;
+    private String link;
 
 }
