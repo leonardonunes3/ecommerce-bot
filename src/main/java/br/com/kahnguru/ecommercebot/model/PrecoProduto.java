@@ -19,7 +19,7 @@ public class Preco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private BigDecimal preco;
+    private Double preco;
     private LocalDateTime dataHora;
 
     @ManyToOne
