@@ -22,8 +22,9 @@ public class Produto {
     private String descricao;
     private String marca;
     private Integer ano;
+    private String link;
 
     @OneToMany(mappedBy = "produto")
-    private List<Preco> historicoPreco;
+    private List<PrecoProduto> historicoPreco;
 
 }
