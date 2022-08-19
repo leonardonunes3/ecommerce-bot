@@ -15,7 +15,8 @@ public class SwaggerConfig {
                         .title("E-Commerce Bot API")
                         .description("Bot para minerar dados de um produto," +
                                 " sendo possível gerar um relatório com histórico" +
-                                "de variação de preços que pode ser feito download")
+                                " de variação de preços que pode ser feito download." +
+                                "O link informado nos produtos deve ser do site da Amazon.")
                         .version("v0.0.1")
                 );
     }
