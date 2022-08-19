@@ -3,5 +3,9 @@ package br.com.kahnguru.ecommercebot.repository;
 import br.com.kahnguru.ecommercebot.model.PrecoProduto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface PrecoRepository extends JpaRepository<PrecoProduto, Integer> {
+import java.util.List;
+
+public interface PrecoProdutoRepository extends JpaRepository<PrecoProduto, Integer> {
+
+    List<PrecoProduto> findAllByProdutoId(Integer id);
 }
