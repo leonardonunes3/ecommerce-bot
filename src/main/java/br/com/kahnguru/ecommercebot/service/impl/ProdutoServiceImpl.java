@@ -26,12 +26,19 @@ public class ProdutoServiceImpl implements ProdutoService {
 
     @Override
     public List<Produto> listAllProdutos() {
-        return null;
+        return produtoRepository.findAll();
     }
 
     @Override
     public Produto addProduto(ProdutoRequestDto produtoRequestDto) {
-        return null;
+        Produto produto = new Produto();
+        produto.setNome(produtoRequestDto.getNome());
+        produto.setDescricao(produtoRequestDto.getDescricao());
+        produto.setMarca(produtoRequestDto.getMarca());
+        produto.setLink(produtoRequestDto.getLink());
+        produto.setAno(produtoRequestDto.getAno());
+
+        return produtoRepository.save(produto);
     }
 
     @Override
